@@ -1,0 +1,32 @@
+Ecmascript:
+-In 1993, Mosaic Developed first web browser with UI.
+-In 1994, Lead devs of Mosaic developed a new web browser by founding Netscape (Netscape Navigator- a polished browser)
+-In 1995, Netscape founded Scripting language Javascript. At the same time, Microsoft debuted Internet Explorer and they realized that Javascript is changing the web so they reverse engineered the navigator and founded Jscript language.
+The tug of war kicked in as developers were not able to develop web apps which were compatible with both browsers. So in 
+- In 1996, Netscape submitted Javascript to the Ecmascript.
+
+ECMA-262 is the language specification
+EcmaScript is the language that implements ECMA-262
+Javascript is basically EcmaScript languat at its core but builds on the top of that.
+
+--------------------------------------------------------------------------------------------------------------------
+Chrome v8 Engine: Engine for javascript is a program that converts code written by developers to machine code that computer can understand.
+Each web browser has their own engines.
+v8-Chrome
+SpiderMonkey-Firefox
+and the list goes on.
+
+Javascript and v8 Engine for Chrome.
+v8 implements ECMAscript and it can be used as Standalone or embedded in to C++ app. 
+ By embedding v8 in your C++ app, you can create apps that can do more features that are not present in javascript.
+
+Javascript Runtime:
+-An environment that provides all the component to use and run a javascript program.
+Every browser has javascript engine.
+Js engine is just one component of Javascript run time apart from that it consists of 
+
+-v8 engine which consists of heap(memory) and call stack.
+- Web apis for storage, DOM ,timers
+-callback/task queue and microtasks queue
+-Event loop.
+
