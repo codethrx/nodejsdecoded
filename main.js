@@ -38,12 +38,22 @@
 //   .catch((e) => console.log(e));
 //Streams
 // const fs = require("fs");
+// const zlib = require("zlib");
+// const gzip = zlib.createGzip();
 // const readFileViaStream = fs.createReadStream("./file.txt", {
 //   encoding: "utf8",
 // });
-// const writeFileViaStream = fs.createWriteStream("./filestram.txt");
-// readFileViaStream.on("data", (chunk) => {
-//   //   console.log(chunk);
-//   writeFileViaStream.write(chunk);
+// const readFileViaStream1 = fs.createReadStream("./promise-file.txt", {
+//   encoding: "utf8",
 // });
-// There are Duplex,readable,writable and tranform steams
+// const writeFileViaStream = fs.createWriteStream("./filestram.txt");
+// // readFileViaStream.on("data", (chunk) => {
+// //   //   console.log(chunk);
+// //   writeFileViaStream.write(chunk);
+// // });
+// // There are Duplex,readable,writable and tranform steams
+// //pipes
+// // readFileViaStream.pipe(writeFileViaStream);
+// readFileViaStream.pipe(gzip).pipe(fs.WriteStream("./file00.txt"));
+//http server.
+require("./built-in/http-module");
