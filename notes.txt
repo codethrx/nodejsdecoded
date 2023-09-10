@@ -1,0 +1,13 @@
+REPL
+Read evaluate print loop
+---------------------------
+modules: reusable and reusable chunk of code
+local
+third party modules
+built-in modules
+---------------------------
+Node js uses IIFE behind the scenes before being loaded.
+Module Wrapper.(node provides)
+(function(exports,require,module,__filename,__dirname){})()
+Module Caching:
+
